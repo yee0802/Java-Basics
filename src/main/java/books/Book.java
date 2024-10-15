@@ -9,4 +9,14 @@ public class Book {
         this.title = title;
         this.pages = pages;
     }
+
+    public void turnPage(int numOfPages) {
+        int pageToTurnTo = currentPage + numOfPages;
+
+        if (pageToTurnTo > pages || pageToTurnTo <= 0) {
+            return;
+        }
+
+        this.currentPage = pageToTurnTo;
+    }
 }
