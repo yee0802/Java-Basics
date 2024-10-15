@@ -4,6 +4,8 @@ public class Main {
         int birthYear = 2002;
         double pi = 3.14;
 
-        System.out.printf("My name is %s, and my birth year is %d", name, birthYear);
+        boolean isLearningJava = true;
+        System.out.printf("My name is %s, and my birth year is %d %n", name, birthYear);
+        System.out.printf("Learning java? %b %n", isLearningJava);
     }
 }
