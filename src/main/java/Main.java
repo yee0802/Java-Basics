@@ -1,3 +1,5 @@
+import java.sql.SQLOutput;
+
 public class Main {
     public static void main(String[] args) {
         String name = "Kye";
@@ -18,6 +20,7 @@ public class Main {
         int result = subtractTwoNumbers(10,5);
         System.out.println("subtractTwoNumbers(10,5) = " + result);
 
+        System.out.println(isStringLonger("Hello", 6));
     }
 
     private static void printGreeting(String name) {
@@ -26,5 +29,9 @@ public class Main {
 
     private static int subtractTwoNumbers(int num1, int num2) {
         return num1 - num2;
+    }
+
+    private static boolean isStringLonger(String str, int length) {
+        return str.length() > length;
     }
 }
