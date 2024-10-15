@@ -14,9 +14,17 @@ public class Main {
         System.out.printf("Learning Java? %b%n", isLearningJava);
 
         printGreeting(name);
+
+        int result = subtractTwoNumbers(10,5);
+        System.out.println("subtractTwoNumbers(10,5) = " + result);
+
     }
 
     private static void printGreeting(String name) {
         System.out.printf("Hello %s!%n", name);
+    }
+
+    private static int subtractTwoNumbers(int num1, int num2) {
+        return num1 - num2;
     }
 }
