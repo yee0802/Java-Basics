@@ -19,4 +19,8 @@ public class Book {
 
         this.currentPage = pageToTurnTo;
     }
+
+    public int showCurrentPageNumber() {
+        return this.currentPage;
+    }
 }
